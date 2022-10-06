@@ -24,8 +24,8 @@ horizon.addEventListener('mouseout', function(){
     anime({
         targets: '.hzdimage',
         scale: (1),
-        cursor: 'default',
       });
+      
       anime({
         targets: '#horizonTextbox',
         scale: (1),
