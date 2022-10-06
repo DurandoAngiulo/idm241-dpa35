@@ -7,7 +7,7 @@ horizon.addEventListener('mouseover', function(){
 anime({
     targets: '.hzdimage',
     scale: (1.3),
-  });
+   });
   anime({
     targets: '#horizonTextbox',
     scale: (1.3),
@@ -16,17 +16,22 @@ anime({
     delay: '250',
     duration: 200,
   });
+
+  hzd.style.cursor = 'pointer';
 })
 
 horizon.addEventListener('mouseout', function(){
     anime({
         targets: '.hzdimage',
         scale: (1),
+        cursor: 'default',
       });
       anime({
         targets: '#horizonTextbox',
         scale: (1),
         opacity: 0,
       });
+
+      hzd.style.cursor = 'default';
 })
 
