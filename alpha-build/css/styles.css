@@ -125,7 +125,9 @@ img{
     padding: .5rem 0 0 .5rem; 
 }
 
-
+.hxdimage{
+    z-index: 99;
+}
 .textboxHeader{
     font-size: 14px;
     text-align: left;

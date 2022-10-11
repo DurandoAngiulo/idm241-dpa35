@@ -8,6 +8,7 @@ anime({
     targets: '.hzdimage',
     scale: (1.3),
    });
+   
   anime({
     targets: '#horizonTextbox',
     scale: (1.3),
@@ -25,11 +26,11 @@ horizon.addEventListener('mouseout', function(){
         targets: '.hzdimage',
         scale: (1),
       });
-      
       anime({
         targets: '#horizonTextbox',
         scale: (1),
         opacity: 0,
+        duration: 200,
       });
 
       hzd.style.cursor = 'default';
