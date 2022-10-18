@@ -1,7 +1,13 @@
 // import 'animate.css';
 'use strict';
+let gameImages = document.querySelectorAll('.game');
+let gameContents = document.querySelectorAll('.textbox');
+
 let horizon = document.getElementById('hzd');
 let hTextbox = document.getElementById('horizonTextbox');
+
+
+
 
 horizon.addEventListener('mouseover', function(){
 anime({
