@@ -13,10 +13,10 @@
 <body>
     <div class="header-section">
         <div class="header-box">
-            <h1>IDM 241 Assignment 1</h1>
+            <h1>IDM 241 Assignment 3</h1>
         </div>
         <div class="header-box">
-            <h2><span class="blue">Alpha Build</span></h2>
+            <h2><span class="blue">Beta</span></h2>
         </div>
      </div>      
     <!-- <div class="custom-container"> -->
@@ -29,16 +29,20 @@
                         <h4 class="textboxHeader ">God Of War</h4>
                         <img class ='info align-self-center' src="./images/info.png">
                     </div>
-                   <div class= "d-flex justify-content-start mt-1">
+                   <div class= "d-flex justify-content-start mt-1 ">
                        <img class= "star align-self-center" src= "./images/star-full.png">
                        <img class= "star align-self-center"src= "./images/star-full.png">
                        <img class= "star align-self-center"src= "./images/star-full.png">
                        <img class= "star align-self-center"src= "./images/star-full.png">
                        <img class= "align-self-center star"src= "./images/star-empty.png">
-                       <p class="border border-1 border-light px-1 ms-1 mb-0 rounded-1">4.0</p>
+                       <p class="border border-1 border-light px-1 ms-1 mb-0 rounded-1 text-white">4.0</p>
                    </div>
                    <h4 class="fw-normal mt-1 mb-0">$39.99</h4>
-                   <p class="mt-1 mb-0">Open World • Adventure • Action </p>
+                   <p class="mt-1 mb-0">
+                    <span class="category d-inline-block">Open World</span> • 
+                    <span class="category d-inline-block">Adventure</span> • 
+                    <span class="category d-inline-block">Action</span> 
+                    </p>
                 </div>
             </div>
             <div class="image-container game">
@@ -48,16 +52,20 @@
                         <h4 class="textboxHeader ">Horizon Zero Dawn</h4>
                         <img class ='info align-self-center' src="./images/info.png">
                     </div>
-                   <div class= "d-flex justify-content-start mt-1">
+                   <div class= "d-flex justify-content-start mt-1 ">
                        <img class= "star align-self-center" src= "./images/star-full.png">
                        <img class= "star align-self-center"src= "./images/star-full.png">
                        <img class= "star align-self-center"src= "./images/star-full.png">
                        <img class= "star align-self-center"src= "./images/star-full.png">
                        <img class= "align-self-center star"src= "./images/star-empty.png">
-                       <p class="border border-1 border-light px-1 ms-1 mb-0 rounded-1">4.0</p>
+                       <p class="border border-1 border-light px-1 ms-1 mb-0 rounded-1 text-white">4.0</p>
                    </div>
                    <h4 class="fw-normal mt-1 mb-0">$39.99</h4>
-                   <p class="mt-1 mb-0">Open World • Adventure • Action </p>
+                   <p class="mt-1 mb-0">
+                    <span class="category d-inline-block">Open World</span> • 
+                    <span class="category d-inline-block">Adventure</span> • 
+                    <span class="category d-inline-block">Action</span> 
+                    </p>
                 </div>
             </div>
             <div class="image-container game">
@@ -73,10 +81,14 @@
                        <img class= "star align-self-center"src= "./images/star-full.png">
                        <img class= "star align-self-center"src= "./images/star-full.png">
                        <img class= "align-self-center star"src= "./images/star-empty.png">
-                       <p class="border border-1 border-light px-1 ms-1 mb-0 rounded-1">4.0</p>
+                       <p class="border border-1 border-light px-1 ms-1 mb-0 rounded-1 text-white">4.0</p>
                    </div>
                    <h4 class="fw-normal mt-1 mb-0">$39.99</h4>
-                   <p class="mt-1 mb-0">Open World • Adventure • Action </p>
+                   <p class="mt-1 mb-0">
+                    <span class="category d-inline-block">Open World</span> • 
+                    <span class="category d-inline-block">Adventure</span> • 
+                    <span class="category d-inline-block">Action</span> 
+                    </p>
                 </div>
             </div>
         </div> 
@@ -85,35 +97,77 @@
         <div class="content-box">
             <h3>Triggers</h3>
             <ul>
-                <li>Hover over Game Image</li>
+                <li>Hover over ANY Game Image</li>
+                <li>Hover over ANY info button </li>
+                <li>Hover over ANY game cateory tag</li>
             </ul>
         </div>
         <div class="content-box">
             <h3>Rules</h3>
-            <h4>The Cursor Hovers In:</h4>
+            <h4> INTERACTION 1. The Cursor Hovers In over a game image:</h4>
             <ul>
                 <li>Cursor changes to pointer</li>
                 <li>Hovered image expands by 30%</li>
-                <li>textbox with game title fades in</li>
+                <li>Game info textbox fades in towards bottom of hovered image</li>
             </ul>
-            <h4>the Cursor Hovers Out</h4>
+            <h4>INTERACTION 2. The Cursor Hovers In over a info button:</h4>
             <ul>
-                <li>textbox with game title fades out</li>
+                <li>Hovered button expands by 20%</li>
+                <li>Button opacity increases by 25% and color changes to light blue</li>
+            </ul>
+            <h4>The Cursor Hovers Out of a info button:</h4>
+            <ul>
+                <li>Hovered button contracts by 20%</li>
+                <li>Button opacity decreases by 25% and color changes to white</li>
+            </ul>
+            <h4> INTERACTION 3. The Cursor Hovers In over a game category:</h4>
+            <ul>
+                <li>Hovered category expands by 10%</li>
+                <li>category opacity increases by 25% and color changes to white</li>
+            </ul>
+            <h4>The Cursor Hovers Out of a game category:</h4>
+            <ul>
+                <li>Hovered category contracts by 10%</li>
+                <li>Category opacity decreases by 25% and color changes to grey</li>
+            </ul>
+            <h4>The Cursor Hovers Out of a Game image</h4>
+            <ul>
+                <li>textbox with game info fades out</li>
                 <li>Hovered image reverts back to previous size</li>
                 <li>pointer changes back to cursor</li>
             </ul>
         </div>
         <div class="content-box">
             <h3>Feedback</h3>
-            <h4>When the Cursor Hovers In:</h4>
+            <h4>When the Cursor Hovers In over a game image:</h4>
             <ul>
                 <li>Cursor changes to pointer</li>
                 <li>Hovered image expands by 30%</li>
-                <li>textbox with game title fades in</li>
+                <li>Game info textbox fades in towards bottom of hovered image</li>
             </ul>
-            <h4>When the Cursor Hovers Out</h4>
+            <h4>When the Cursor Hovers In over a info button:</h4>
             <ul>
-                <li>textbox with game title fades out</li>
+                <li>Hovered button expands by 20%</li>
+                <li>Button opacity increases by 25% and color changes to light blue</li>
+            </ul>
+            <h4>When the Cursor Hovers out of a info button:</h4>
+            <ul>
+                <li>Hovered button contracts by 20%</li>
+                <li>Button opacity decreases by 25% and color changes to white</li>
+            </ul>
+            <h4>When the Cursor Hovers In over a game category:</h4>
+            <ul>
+                <li>Hovered category expands by 10%</li>
+                <li>category opacity increases by 25% and color changes to white</li>
+            </ul>
+            <h4>When the Cursor Hovers Out of a game category:</h4>
+            <ul>
+                <li>Hovered category contracts by 10%</li>
+                <li>Category opacity decreases by 25% and color changes to grey</li>
+            </ul>
+            <h4>When the Cursor Hovers Out of a Game image</h4>
+            <ul>
+                <li>textbox with game info fades out</li>
                 <li>Hovered image reverts back to previous size</li>
                 <li>pointer changes back to cursor</li>
             </ul>
@@ -121,7 +175,7 @@
         <div class="content-box">
             <h3>Loops & Modes</h3>
             <ul>
-                <li>Game name may change based on database</li>
+                <li>Game name and info may change based on database values of hovered game</li>
             </ul>
         </div>
     </div>
