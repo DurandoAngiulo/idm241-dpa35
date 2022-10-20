@@ -288,7 +288,7 @@ margin: 2rem 0;
 }
 
 .textbox{
-    bottom: -4.1rem;
+    bottom: -4.2rem;
     /* margin-top: -15%; */
     border-radius: 0 0 11px 11px;
     opacity: 0;
@@ -395,7 +395,7 @@ margin: 2rem 0;
 
 
     .textbox{
-        bottom: -4rem;
+        bottom: -4.1rem;
         border-radius: 0 0 18px 18px;
         opacity: 0;
         display: none;

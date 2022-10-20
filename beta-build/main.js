@@ -28,7 +28,7 @@ gameImages.forEach(gameImage=>{
           targets: info,
           scale: (1.2),
         });
-        info.src="./images/info-blue.png"
+        info.src="./images/info-white.png"
      
       })
     })
