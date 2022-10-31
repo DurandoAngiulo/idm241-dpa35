@@ -46,7 +46,7 @@ gameImages.forEach(gameImage=>{
       category.addEventListener('mouseover', function(){
         anime({
           targets: category,
-          scale: (1.05),
+          scale: (1.2),
         });
         category.style.color= '#ffffff';
       })

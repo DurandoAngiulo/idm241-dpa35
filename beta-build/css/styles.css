@@ -149,7 +149,7 @@ margin: 2rem 0;
     }
     .content-box{
     width:80%;
-    max-height:800px;
+    max-height:1600px;
     margin-bottom: 1rem;
     padding: 1rem;
     background-color: #373737;
@@ -256,7 +256,7 @@ margin: 2rem 0;
 }
     .content-box{
     width:48%;
-    max-height:600px;
+    max-height:900px;
     height: auto;
     margin-bottom: 1rem;
     padding: 1rem;
