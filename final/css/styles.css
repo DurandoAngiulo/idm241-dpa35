@@ -234,10 +234,10 @@ img {
   }
 
   .content-section {
-    justify-content: space-between;
+    justify-content: center;
   }
   .content-box {
-    width: 48%;
+    width: 80%;
     min-height: 200px;
     max-height: none;
     height: auto;
@@ -341,12 +341,12 @@ img {
     width: 100%;
     padding: 1rem;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    justify-content: center;
   }
 
   .content-box {
-    width: 48%;
+    width: 75%;
     min-height: 200px;
     max-height: none;
     height: auto;
@@ -363,6 +363,7 @@ img {
     justify-content: center;
   }
   .image-box {
-    width: 31%;
+    width: 45%;
+    margin: 0 1rem;
   }
 }
