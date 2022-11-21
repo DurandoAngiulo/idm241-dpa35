@@ -3,19 +3,56 @@ let gameImages = document.querySelectorAll(".game");
 let gameContents = document.querySelectorAll(".textbox");
 let infos = document.querySelectorAll(".info");
 let categories = document.querySelectorAll(".category");
+let modals = document.querySelectorAll(".modalControl");
+let HzdModal = document.getElementById("horizonModal");
+let gowModal = document.getElementById("godofwarModal");
+let unchartModal = document.getElementById("unchartedModal");
+let hzdGif = document.querySelector(".horizonGif");
+let gowGif = document.querySelector(".godofwarGif");
+let unchartGif = document.querySelector(".unchartedGif");
 
-var myModal = document.getElementById("exampleModal");
-var myInput = document.getElementById("myInput");
+// modal hookups
 
-myModal.addEventListener("shown.bs.modal", function () {
-  myInput.focus();
+// HzdModal.addEventListener("shown.bs.modal", function () {
+//   myInput.focus();
+// });
+// gowModal.addEventListener("shown.bs.modal", function () {
+//   myInput.focus();
+// });
+
+// unchartModal.addEventListener("shown.bs.modal", function () {
+//   myInput.focus();
+// });
+
+hzdGif.addEventListener("mouseover", function () {
+  hzdGif.src = "./images/hzd.gif";
+});
+hzdGif.addEventListener("mouseout", function () {
+  hzdGif.src =
+    "https://res.cloudinary.com/dsysuymw2/image/upload/v1668458996/react-project/hzd-landscape_lnmzhr.jpg";
 });
 
-//ANIMATION
+gowGif.addEventListener("mouseover", function () {
+  gowGif.src = "./images/gow.gif";
+});
+gowGif.addEventListener("mouseout", function () {
+  gowGif.src =
+    "https://res.cloudinary.com/dsysuymw2/image/upload/v1668459541/react-project/GameofWar_copy_negfrl.jpg";
+});
+
+unchartGif.addEventListener("mouseover", function () {
+  unchartGif.src = "./images/uncharted.gif";
+});
+unchartGif.addEventListener("mouseout", function () {
+  unchartGif.src =
+    "https://res.cloudinary.com/dsysuymw2/image/upload/v1668459261/react-project/uncharted-4-jeep_zw1ocr.jpg";
+});
+
+//game images ANIMATION
 
 gameImages.forEach((gameImage) => {
   gameImage.addEventListener("mouseover", function () {
-    gameImage.style.cursor = "pointer";
+    // gameImage.style.cursor = "pointer";
     gameImage.children[1].style.display = "block";
     gameImage.style.zIndex = 51;
     anime({
@@ -36,6 +73,7 @@ gameImages.forEach((gameImage) => {
         info.src = "./images/info-white.png";
       });
     });
+
     infos.forEach((info) => {
       info.addEventListener("mouseout", function () {
         anime({

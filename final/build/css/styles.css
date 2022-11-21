@@ -131,9 +131,6 @@ img {
   opacity: 95%;
 }
 
-/* .hzdModal {
-  display: absolute;
-} */
 .header-box {
   margin: 1rem 0;
 }
@@ -396,11 +393,11 @@ img {
     padding: 1rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   .content-box {
-    width: 23%;
+    width: 45%;
     min-height: 200px;
     max-height: none;
     height: auto;
